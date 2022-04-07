@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 24px;
+    margin-right: 50px;
+    padding: 24px;
+    gap: 8px;
+}
+.contenedor div{
+    margin: 8px;
+    padding: 8px;
+    height: 100px;
+    min-width: 200px;
+
+}
+
+.tarjeta:nth-child(odd):hover{
+    box-shadow: 8px 8px 8px;
+    transition: box-shadow 0.7s ease-in;
+}
+.tarjeta:nth-child(even):hover{
+    background-color: bisque;
+    border-radius: 32px;
+    transition: border-radius 4s ease-in-out;
+}
+
